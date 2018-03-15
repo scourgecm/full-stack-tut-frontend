@@ -5,7 +5,7 @@ import chaiImmutable from 'chai-immutable';
 const doc = new jsdom.JSDOM('<!doctype html><html><body></body></html>');
 const win = doc.window;
 
-global.document = doc;
+global.document = win.document;
 global.window = win;
 
 Object.keys(win).forEach((key) => {

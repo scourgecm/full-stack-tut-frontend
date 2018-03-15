@@ -4,7 +4,7 @@ module.exports = {
     entry: [
         'webpack-dev-server/client?http://localhost:8080',
         'webpack/hot/only-dev-server',
-        './src/index.js'
+        './src/index.jsx'
     ],
     module: {
         rules: [{
@@ -12,6 +12,9 @@ module.exports = {
             exclude: /node_modules/,
             loader: ['babel-loader?presets[]=react']
         }]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     },
     output: {
         path: __dirname + '/dist',
