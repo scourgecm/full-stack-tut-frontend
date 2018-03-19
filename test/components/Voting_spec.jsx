@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+
 import {
     renderIntoDocument,
     scryRenderedDOMComponentsWithTag,
-    scryRenderedDOMComponentsWithClass,
     Simulate
 }
     from "react-dom/test-utils";
